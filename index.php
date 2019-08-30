@@ -18,13 +18,16 @@ $interface["industrytype"]=true;
 // Login
 
 //Insert Statement
+$interface["updateprofile"]=true;
+$interface["adduser"]=true;
 
 //Select Statement
-
-$interface["circular"]=true;
+$interface["viewuser"]=true;
+$interface["viewuserdetails"]=true;
 
 
 //Update Statement
+$interface["updatepassword"]=true;
 
 
 
@@ -81,8 +84,7 @@ $interface_type = isset($_GET['interface']) ? sanitize($_GET['interface']) : "" 
 
 if ($interface_type == "")
 	{
-	//echo "This is the access to UTM API. Click <a href='./index.html'>here</a> to learn to use it.";
-	echo "you have reach to NTP API. kindly contact system administrator if you see this messege.";
+	echo "Fatal error! Contact system admin for assistances.";
 	//echo "unknown";
 	exit();
 	}
