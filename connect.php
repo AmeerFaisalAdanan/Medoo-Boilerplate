@@ -3,7 +3,6 @@
 
 require 'medoo.min.php';
 
-// $config = parse_ini_file('../../private/config/server.ini');
 $config = parse_ini_file('config/server.ini');
 
 
@@ -11,7 +10,8 @@ use Medoo\Medoo;
 
 $database = new Medoo([
 // required
-'database_type' => 'mysql',
+// 'database_type' => 'mysql',
+'database_type' => $config['database_type'],
 'database_name' => $config['dbname'],
 'server' => $config['servername'],
 'username' => $config['username'],
@@ -25,9 +25,6 @@ $database = new Medoo([
 PDO::ATTR_CASE => PDO::CASE_NATURAL
 ]
 ]);
-
-
-
 
 
 //using config file
