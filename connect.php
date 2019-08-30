@@ -4,15 +4,15 @@
 require 'medoo.min.php';
 
 // $config = parse_ini_file('../../private/config/server.ini');
-$config = parse_ini_file('../../private/config/server.ini');
+$config = parse_ini_file('config/server.ini');
 
 $database = new medoo([
 // required
 'database_type' => 'mysql',
-'database_name' => $config['dbname'], // boleh tukar
+'database_name' => $config['dbname'],
 'server' => $config['servername'],
-'username' => $config['username'], // boleh tukar
-'password' => $config['password'], // boleh tukar
+'username' => $config['username'],
+'password' => $config['password'], 
 'charset' => 'utf8',
 
 // optional
