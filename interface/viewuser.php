@@ -22,11 +22,6 @@ $datas = $database->select("user",
 );
 
 
-// $datas = $database->query("SELECT hs_code FROM ntp_shipment_item") -> fetchAll();
-
-// $array = json_decode($datas);
-
-
 $jsonResult = $datas;
 
 

@@ -10,11 +10,6 @@ $phone_no = $_GET["phone_no"];
 $address = $_GET["address"];
 $nationality = $_GET["nationality"];
 
-// $datas = $database->query("SELECT circular.id, circular.type,circular.value FROM circular")->fetchAll();
-// $database->fetchAll();
-
-
-
 
 $datas = $database->insert("userprofile",
     [
@@ -26,10 +21,6 @@ $datas = $database->insert("userprofile",
     ]
 );
 
-
-// $datas = $database->query("SELECT hs_code FROM ntp_shipment_item") -> fetchAll();
-
-// $array = json_decode($datas);
 
 
 $jsonResult = $datas;

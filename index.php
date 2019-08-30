@@ -7,14 +7,6 @@ require_once ("medoo.min.php");
 // you can close any api for maintainance by ( $interface["api-name"] = false )
 $interface = array();
 
-$interface["update_hs"] = true; // &username=
-$interface["premise"] = true;
-$interface["premise_restaurant"]= true;
-$interface["alluser"] =true;
-$interface["newcompany"]=true;
-$interface["selectcompany"]=true;
-$interface["industrytype"]=true;
-
 // Login
 
 //Insert Statement
