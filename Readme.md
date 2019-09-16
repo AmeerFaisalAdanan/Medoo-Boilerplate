@@ -1,1 +1,1 @@
-first init
+## This is an expanded version of Medoo database framework for a quick API development using php.##
