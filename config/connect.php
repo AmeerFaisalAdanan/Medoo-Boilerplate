@@ -1,9 +1,9 @@
 <?php
 
 
-require 'medoo.min.php';
+require 'lib/medoo.min.php';
 
-$config = parse_ini_file('config/server.ini');
+$config = parse_ini_file('server/server.ini');
 
 
 use Medoo\Medoo;
