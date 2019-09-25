@@ -1,8 +1,9 @@
 <?php
-require_once ("supportFunction.php");
-require_once ("cache.php");
-require_once ("connect.php");
-require_once ("medoo.min.php");
+require_once ("config/connect.php");
+require_once ("lib/supportFunction.php");
+require_once ("lib/medoo.min.php");
+require_once ("cache/cache.php");
+
 // register interface here
 // you can close any api for maintainance by ( $interface["api-name"] = false )
 $interface = array();
