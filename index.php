@@ -101,7 +101,7 @@ else
 
 if ($interface_type == "podcast")
 	{
-	header("HTTP/1.1 401 KO");
+	header("HTTP/1.1 401 Unauthorized");
 	}
 else
 	{
