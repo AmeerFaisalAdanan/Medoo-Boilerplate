@@ -77,7 +77,9 @@ $interface_type = isset($_GET['interface']) ? sanitize($_GET['interface']) : "" 
 
 if ($interface_type == "")
 	{
-	echo "Fatal error! Contact system admin for assistances.";
+		// redirect to index.html
+		header("Location: app/index.html");
+	// echo "Fatal error! Contact system admin for assistances.";
 	//echo "unknown";
 	exit();
 	}
